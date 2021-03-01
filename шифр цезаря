@@ -1,0 +1,2 @@
+key = int(input())
+print(*[chr(ord('a') + (ord(i) - ord('a') + 26 - key) % 26) if 'a' <= i <= 'z' else i for i in input()], sep='')
